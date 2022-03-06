@@ -21,20 +21,20 @@ Følgende tools installes i et images genne docker.tools filen.
 * kubectl
 * Helm 3  
 
-se vejledning [here](tools/README.md)
+se vejledning [here](/tools/README.md)
 
 ## Kind
 Kind er et tool til hurtigt at lave lokale kubernetes clustere.
 https://kind.sigs.k8s.io/
 
-se vejledning [here](kind/README.md)
+se vejledning [here](/kind/README.md)
 
 ## Helm 3
 Helm er en install/upgrade package manager til Kubernetes, man kan sammenligne den med f.eks windows installer, linux apk eller 
 RPM packed manager, yum, Homebrew og Chocolatey.
 https://helm.sh/docs/
 
-se vejledning [here](helm/README.md)
+se vejledning [here](/helm/README.md)
 
 
 ## Deploy Wordpress to Kubernetes
