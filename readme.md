@@ -6,11 +6,11 @@ Følgende tool vi blive brugt :
 * Helm 3
 * kubectl
 
-Der vil først være en gennem gang af de forskellige tools, med nogle så test opgaver for
-låre og få lidt erfaring med at bruge disse tools.
+Der vil først være en gennem gang af de forskellige tools, med nogle få test opgaver for
+lære og få lidt erfaring med at bruge disse tools.
 
-Derefter vil der være en gennemgang af at installer Wordpress i Kind Kubernetes cluster, er 
-vil der opså gennemgang af hvordan man builder sit eget image med egen udviklede PHP plugins.
+Derefter vil der være en gennemgang af at installer Wordpress i Kind Kubernetes cluster, der 
+vil der opså være en gennemgang af hvordan man builder sit eget image med egen udviklede PHP plugins.
 
 Tilsidst laves der en Minikube med Wordpress, PHP plugins, Prometheus og Grafana med et kubectl dashboard.
 
