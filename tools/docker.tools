@@ -1,0 +1,13 @@
+FROM alpine
+RUN apk update && apk add bash
+RUN apk add --no-cache curl
+RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+RUN chmod +x ./kubectl
+RUN mv ./kubectl /usr/local/bin/kubectl
+
+RUN curl -LO https://get.helm.sh/helm-v3.7.2-linux-amd64.tar.gz
+RUN tar -C /tmp/ -zxvf helm-v3.7.2-linux-amd64.tar.gz
+RUN rm helm-v3.7.2-linux-amd64.tar.gz
+RUN mv /tmp/linux-amd64/helm /usr/local/bin/helm
+RUN chmod +x /usr/local/bin/helm
+

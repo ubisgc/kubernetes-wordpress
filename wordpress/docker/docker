@@ -1,0 +1,11 @@
+FROM bitnami/wordpress:5.9.1-debian-10-r7
+
+USER root
+RUN whoami
+RUN apt-get update
+RUN apt install unzip
+RUN curl -o /tmp/bbpress.2.5.14.zip https://downloads.wordpress.org/plugin/bbpress.2.5.14.zip
+RUN unzip /tmp/bbpress.2.5.14.zip -d /opt/bitnami/wordpress/wp-content/plugins
+RUN sed "/.*Starting.*/a /opt/bitnami/wp-cli/bin/wp plugin activate bbpress" /opt/bitnami/scripts/wordpress/entrypoint.sh > /tmp/entrypoint.sh-new
+RUN cp /tmp/entrypoint.sh-new /opt/bitnami/scripts/wordpress/entrypoint.sh
+USER 1001
