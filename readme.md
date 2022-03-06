@@ -27,14 +27,14 @@ se vejledning [here](tools/readme.md)
 Kind er et tool til hurtigt at lave lokale kubernetes clustere.
 https://kind.sigs.k8s.io/
 
-se vejledning [here](kind/README.md)
+se vejledning [here](kind/readme.md)
 
 ## Helm 3
 Helm er en install/upgrade package manager til Kubernetes, man kan sammenligne den med f.eks windows installer, linux apk eller 
 RPM packed manager, yum, Homebrew og Chocolatey.
 https://helm.sh/docs/
 
-se vejledning [here](helm/README.md)
+se vejledning [here](helm/readme.md)
 
 
 ## Deploy Wordpress to Kubernetes
