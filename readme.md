@@ -42,5 +42,5 @@ For at deploy Wordpress til kubernetes vil vi bruge et helm chart fra Bitnami.
 
 https://bitnami.com/stack/wordpress
 
-
+se vejledning [here](wordpress/readme.md)
 
