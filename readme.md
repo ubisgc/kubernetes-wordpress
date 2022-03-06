@@ -21,7 +21,7 @@ Følgende tools installes i et images genne docker.tools filen.
 * kubectl
 * Helm 3  
 
-se vejledning [here](../tools/README.md)
+se vejledning [here](tools/readme.md)
 
 ## Kind
 Kind er et tool til hurtigt at lave lokale kubernetes clustere.
