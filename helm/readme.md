@@ -74,20 +74,20 @@ men mere om det senere
 ```
 helm list -n mgc-namespace
 ```
-For at helm kan list vise de releases af charted som er installlerde, skal man angive det namepsace hvor de er deployet.
+For at helm kan list de releases af charted som er installlerde, skal man angive det namepsace hvor de er deployet.
 Helm list viser nu den en release der finde og man kan se status og revision. Status er deployed
 og revision er 1, hvis man kørte en helm upgrade for at deploy en ny version, så ville man have 2 revision.
 
-helm history angry-bird
+helm history
 ```
 helm history mgc-nginx -n mgc-namespace
 ```
-Vise history og hvis helm fejler vil der i description stå en fejl meddelse 
+Viser history og hvis helm fejler vil der i description stå en fejl meddelse 
 ```
 helm rollback mgc-nginx  1 -n mgc-namespace
 helm history mgc-nginx -n mgc-namespace
 ```
-Vil lave en rolle back til tidligere version, i dette til fælde giver det ingen mening da der kun er en revison.
+Lave en rolle back til tidligere version, i dette til fælde giver det ingen mening da der kun er en revison.
 
 Prøv at gå inde i value.yaml file og ændre  replicaCount: 1 til  replicaCount: 3
 ```
